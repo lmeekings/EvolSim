@@ -1,4 +1,4 @@
 # EvolSim
-To run this successfully set up visual studio for C++ with SFML(Simple and fast multimedia library) and run main.cpp.
+There should be CMAKE settings to create an exe called Evolsim.exe, simply run the exe once its created.
 
 Lewis James Meekings
