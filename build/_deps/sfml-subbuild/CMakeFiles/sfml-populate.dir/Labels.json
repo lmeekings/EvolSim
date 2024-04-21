@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/518d41b717206a4d5fe30f177d585b61/sfml-populate.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/e4477cc67be1d407e7a95f84b03d5355/sfml-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/ljmee/source/repos/EvolSim/build/_deps/sfml-subbuild/CMakeFiles/438aefcd1ceb652835a33a32e6ad5dbd/sfml-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sfml-populate"
+		],
+		"name" : "sfml-populate"
+	}
+}

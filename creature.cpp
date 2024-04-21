@@ -24,7 +24,7 @@ Creature::Creature(Eater eater, string_view speciesName, int size, int width, in
     }
     this->eater = eater;
     this->speciesName = speciesName;
-    if (size + changeSize > 0 and size + changeSize <= 5)
+    if (size + changeSize > 0 && size + changeSize <= 5)
     {
         this->size = size + changeSize;
     }
@@ -245,9 +245,9 @@ double Creature::getCombatStrength()
 vector<EvolSim::Trait> Creature::reproduce(Creature otherCreature)
 {
     vector<Trait> newCreatureTraits;
-    if (!traitList.empty() or !otherCreature.traitList.empty())
+    if (!traitList.empty() || !otherCreature.traitList.empty())
     {
-        if (!traitList.empty() and !otherCreature.traitList.empty())
+        if (!traitList.empty() && !otherCreature.traitList.empty())
         {
             int i = 0;
             for (Trait t : traitList)
@@ -287,7 +287,7 @@ vector<EvolSim::Trait> Creature::reproduce(Creature otherCreature)
             }
         }
 
-        if (!traitList.empty() and otherCreature.traitList.empty())
+        if (!traitList.empty() && otherCreature.traitList.empty())
         {
             for (Trait t : traitList)
             {
@@ -299,7 +299,7 @@ vector<EvolSim::Trait> Creature::reproduce(Creature otherCreature)
             }
         }
 
-        if (!otherCreature.traitList.empty() and traitList.empty())
+        if (!otherCreature.traitList.empty() && traitList.empty())
         {
             for (Trait t : traitList)
             {
@@ -321,7 +321,7 @@ vector<EvolSim::Trait> Creature::reproduce(Creature otherCreature)
             newCreatureTraits.push_back(EvolSim::Trait::universalTraitList[newTrait]);
             //mutate new
         }
-        else if (mutateChance > 80 and !newCreatureTraits.empty())
+        else if (mutateChance > 80 && !newCreatureTraits.empty())
         {
             int replacedTrait = rand() % newCreatureTraits.size();
             newCreatureTraits.at(replacedTrait) = EvolSim::Trait::universalTraitList[newTrait];
@@ -331,7 +331,7 @@ vector<EvolSim::Trait> Creature::reproduce(Creature otherCreature)
     {
         int mutateChance = rand() % 101;
         int newTrait = rand() % EvolSim::Trait::universalTraitList.size();
-        if (mutateChance > 90 and !newCreatureTraits.empty())
+        if (mutateChance > 90 && !newCreatureTraits.empty())
         {
             int replacedTrait = rand() % newCreatureTraits.size();
             newCreatureTraits.at(replacedTrait) = EvolSim::Trait::universalTraitList[newTrait];

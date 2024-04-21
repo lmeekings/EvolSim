@@ -31,15 +31,15 @@ Battle::Battle(EvolSim::Creature& attacker, EvolSim::Creature& defender)
         }
         else
         {
-            if ((defender.getEater() == EvolSim::Creature::Eater::herbivore and
-                defender.getHitpoints() <= defender.getMaxHitpoints() / 5) or
-                (defender.getEater() == EvolSim::Creature::Eater::carnivore and
-                    defender.getHitpoints() <= defender.getMaxHitpoints() / 10 and
+            if ((defender.getEater() == EvolSim::Creature::Eater::herbivore &&
+                defender.getHitpoints() <= defender.getMaxHitpoints() / 5) ||
+                (defender.getEater() == EvolSim::Creature::Eater::carnivore &&
+                    defender.getHitpoints() <= defender.getMaxHitpoints() / 10 &&
                     defender.getSatiety() >= defender.getSize()))
             {
                 battlerFled = flee(defender, attacker);
             }
-            if (attacker.getHitpoints() <= attacker.getMaxHitpoints() / 10 and
+            if (attacker.getHitpoints() <= attacker.getMaxHitpoints() / 10 &&
                 defender.getSatiety() >= defender.getSize())
             {
                 battlerFled = flee(attacker, defender);

@@ -60,5 +60,5 @@ EvolSim::Trait fat{ 0,2,0,0,0,-1,4,EvolSim::Trait::Special::none };
 const vector<EvolSim::Trait>
 EvolSim::Trait::universalTraitList = { winged, shell, largeEars, binocularVision, paddedFeet,
                                          hooves, quills, venom, scales, fur, feathers,
-                                         stealthFeathers, thickHide, fangs, claws, horn, camo,
+                                         owlFeathers, thickHide, fangs, claws, horn, camo,
                                          warningColor, fat };

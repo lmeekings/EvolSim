@@ -21,19 +21,21 @@ Environment::Environment(int width, int height, double foliageChance,
     this->height = height;
     this->temperature = temperature;
     this->speciesList = speciesList;
+    this->foliageChance = foliageChance;
+    this->foliageSize = foliageSize;
     deadCreatures = 0;
     bornCreatures = 0;
 
-    buildEnvironment(width, height, foliageChance, foliageSize);
+    buildEnvironment();
     this->originalTileArray = this->tileArray;
     initializeSpecies(speciesList);
 }
 /**
  * This builds a grid for the environment which is required for the movement of creatures.
 */
-void Environment::buildEnvironment(int width, int height, double foliageChance,
-    int foliageSize)
+void Environment::buildEnvironment()
 {
+    tileArray.clear();
     for (int i = 0; i < width; i++)
     {
         vector<int> temp;
@@ -159,7 +161,7 @@ vector<vector<int>> Environment::getSearchRegion(Creature creature) {
         {
             searchingRegionFull.push_back({ locationX - k[0], locationY + k[1] });
         }
-        if (k[0] > 0 and k[1] > 0)
+        if (k[0] > 0 && k[1] > 0)
         {
             if (locationX - k[0] < 0 || locationY - k[1] < 0) {}
             else
@@ -251,7 +253,7 @@ void Environment::startCycle()
             }
         }
 
-        if (creatureList[i].getHitpoints() <= 0 or die(creatureList[i]))
+        if (creatureList[i].getHitpoints() <= 0 || die(creatureList[i]))
         {
             creatureList.erase(creatureList.begin() + i);
         }
@@ -286,7 +288,7 @@ void Environment::breed(Creature creature)
 {
     int breedingChance = rand() % 101;
     if (creature.getSex() == EvolSim::Creature::Sex::female
-        and breedingChance + (creature.getSize() - creature.getSatiety() * 20) < 10)
+        && breedingChance + (creature.getSize() - creature.getSatiety() * 20) < 10)
     {
         vector<vector<int>> mateLocations = getSearchRegion(creature);
         vector<EvolSim::Creature> mateList;
@@ -294,8 +296,8 @@ void Environment::breed(Creature creature)
         for (EvolSim::Creature c : creatureList)
         {
             if (count(mateLocations.begin(), mateLocations.end(), c.getLocation())
-                and !creature.compareCreature(c) and c.getSex() == EvolSim::Creature::Sex::male
-                and creature.compareSpecies(c))
+                && !creature.compareCreature(c) && c.getSex() == EvolSim::Creature::Sex::male
+                && creature.compareSpecies(c))
             {
                 mateList.push_back(c);
             }
@@ -384,7 +386,7 @@ vector<vector<int>> Environment::getCreatureGraphics()
         for (int j = 0; j < height; j++)
         {
             int creatureCount = std::count_if(creatureList.begin(), creatureList.end(), [i, j](EvolSim::Creature x)
-                                {return x.getLocation()[0] == i and x.getLocation()[1] == j; });
+                {return x.getLocation()[0] == i && x.getLocation()[1] == j; });
             tempVector.push_back(creatureCount);
         }
         creatureVector.push_back(tempVector);
@@ -403,4 +405,11 @@ string Environment::getSpeciesNames()
     }
 
     return temp;
+}
+
+/* Triggers the desertification effect
+*/
+void Environment::triggerDesertification()
+{
+
 }

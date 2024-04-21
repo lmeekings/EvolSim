@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\438aefcd1ceb652835a33a32e6ad5dbd\sfml-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\e4477cc67be1d407e7a95f84b03d5355\sfml-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\518d41b717206a4d5fe30f177d585b61\sfml-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\ljmee\source\repos\EvolSim\build\_deps\sfml-subbuild\CMakeFiles\sfml-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{404A070C-3B38-3C16-AAEC-22F64A708A48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

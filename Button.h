@@ -40,7 +40,7 @@ public:
 		float btnX = button.getPosition().x;
 		float btnY = button.getPosition().y;
 
-		if (mouseX > btnX and mouseX < btnX + button.getLocalBounds().width and mouseY > btnY and mouseY < btnY + button.getLocalBounds().height)
+		if (mouseX > btnX && mouseX < btnX + button.getLocalBounds().width && mouseY > btnY && mouseY < btnY + button.getLocalBounds().height)
 		{
 			return true;
 		}

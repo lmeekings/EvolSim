@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ljmee\source\repos\EvolSim\build\CMakeFiles\46bd96454d60ee04244ea33deb446eef\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{85C66E9C-0B38-3191-A61A-FF22144413CF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -15,9 +15,10 @@ namespace EvolSim
             int foliageSize, int temperature, vector<Creature> speciesList);
         ~Environment();
         void initializeSpecies(vector<Creature> speciesList);
-        void buildEnvironment(int width, int height, double foliageChance, int foliageSize);
+        void buildEnvironment();
         void startCycle();
         void resetEnvironment();
+        void triggerDesertification();
 
         vector<int> searchFood(Creature creature);
         Creature searchPrey(Creature creature);
@@ -59,5 +60,7 @@ namespace EvolSim
         int liveCreatures;
         int deadCreatures;
         int bornCreatures;
+        double foliageChance;
+        int foliageSize;
     };
 }
